@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-center py-3">Menu</h1>
+
+    
+    <div class="d-flex justify-content-between flex-wrap">
+       
+        <div class="card mb-3" style="width: 14rem" *ngFor="let product of products"
+                (click)="navigateToProduct(product.id)">
+        
+            <img class="card-img-top" src="{{product.imageUrl}}">
+            <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.description}}</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">{{product.price | number: '1.2-2' }} RON</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+

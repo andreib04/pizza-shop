@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProductComponent } from './product/product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartComponent } from './cart/cart.component';
+import { DeliveryDataComponent } from './delivery-data/delivery-data.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CartComponent } from './cart/cart.component';
     MenuComponent,
     ContactComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    DeliveryDataComponent
   ],
   imports: [
     BrowserModule,

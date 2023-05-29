@@ -3,6 +3,7 @@ import { Product } from '../product';
 import { ProductService } from '../services/product.service';
 import { Router } from '@angular/router';
 import { CartService } from '../services/cart.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -13,6 +14,7 @@ export class MenuComponent {
   products: Product[] = [];
 
   constructor(
+     private route: ActivatedRoute,
      private productsService: ProductService,
      private router: Router,
      private cartService: CartService

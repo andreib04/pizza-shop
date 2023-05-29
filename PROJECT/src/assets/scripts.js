@@ -1,12 +1,25 @@
 let slideIndex = 1;
 showSlide(slideIndex);
 
+// Start automatic slideshow
+let slideInterval = setInterval(() => {
+  changeSlide(1);
+}, 5000);
+
 function changeSlide(n) {
+  clearInterval(slideInterval); // Clear previous interval
   showSlide(slideIndex += n);
+  slideInterval = setInterval(() => {
+    changeSlide(1);
+  }, 5000); // Start new interval
 }
 
 function currentSlide(n) {
+  clearInterval(slideInterval); // Clear previous interval
   showSlide(slideIndex = n);
+  slideInterval = setInterval(() => {
+    changeSlide(1);
+  }, 5000); // Start new interval
 }
 
 function showSlide(n) {

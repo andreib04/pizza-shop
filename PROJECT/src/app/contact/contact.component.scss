@@ -1,9 +1,13 @@
 .card{
     
-    width: 150px;
-    height: 150px;
+    width: 500px;
+    height: 500px;
     border-radius: 48px;
     background: #df7777;
     box-shadow:  -34px 34px 60px #9a5252,
              34px -34px 60px #ff9c9c;
+    position: relative;
+    left: 37%;
+    right: 50%;
+    top: 100px;
 }

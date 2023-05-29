@@ -23,21 +23,21 @@ export class ProductService {
       price: 24
     } as Product,
     {
-      id: 2,
+      id: 3,
       imageUrl: "",
       name: "Pizza",
       description: "abc",
       price: 5
     } as Product,
     {
-      id: 2,
+      id: 4,
       imageUrl: "",
       name: "Pizza",
       description: "abc",
       price: 5
     } as Product,
     {
-      id: 2,
+      id: 5,
       imageUrl: "",
       name: "Pizza",
       description: "abc",

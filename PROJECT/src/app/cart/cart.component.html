@@ -1,0 +1,13 @@
+<h1>Cart</h1>
+
+<div class="cart-item" *ngFor="let item of items">
+    <div class="image">
+        <img class="image" src="{{item.imageUrl}}">
+    </div>
+    <span>{{ item.name }} </span>
+    <span> {{ item.price | number: '1.2-2'}} RON  </span> <br>
+    <span>  => {{item.description}} </span>
+</div>
+<div class="clearCart">
+    <button type="button" class="btn btn-outline-danger" (click)="clear()">Clear Cart</button>
+</div>

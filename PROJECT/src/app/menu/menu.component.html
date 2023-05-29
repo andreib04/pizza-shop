@@ -2,6 +2,10 @@
     <h1 class="text-center py-3">Menu</h1>
 
     
+    <div class="goTo">
+        <button type="button" class="btn btn-outline-danger" routerLink="/cart">Go to cart</button>
+    </div>
+
     <div class="d-flex justify-content-between flex-wrap">
        
         <div class="card mb-3" style="width: 14rem" *ngFor="let product of products"
@@ -13,7 +17,7 @@
                 <p class="card-text">{{product.description}}</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-primary">{{product.price | number: '1.2-2' }} RON</a>
+                <button class="btn btn-primary" type="button" (click)="addToCart(product)">{{product.price | number: '1.2-2' }} RON</button>
             </div>
         </div>
     </div>

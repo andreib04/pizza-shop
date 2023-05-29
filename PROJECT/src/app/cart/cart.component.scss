@@ -1,0 +1,27 @@
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image{
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    height: 100px;
+}
+.cart-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    border-style:solid;
+    margin-left: 10px;
+}
+.clearCart{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5em;
+    margin-top: 3em;
+}
+

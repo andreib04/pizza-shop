@@ -33,7 +33,9 @@
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/scripts.js"
+            ]
           },
           "configurations": {
             "production": {

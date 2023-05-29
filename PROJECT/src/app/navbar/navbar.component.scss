@@ -5,11 +5,13 @@
     .logo{
         width: 8%;
     }
-    .contact{
+   
+    .myCart{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
         border-style: solid;
-        background-color: red;
-        border-radius:15em;
-        
+        border-radius: 10%;
     }
 }
 

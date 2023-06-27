@@ -31,7 +31,6 @@ export class MenuComponent {
 
   addToCart(product: Product){
     this.cartService.addToCart(product);
-    window.alert('Podusul a fost adaugat in cos!')
   }
 
   

@@ -11,7 +11,7 @@
         <div class="card mb-3" style="width: 14rem" *ngFor="let product of products"
                 (click)="navigateToProduct(product.id)">
         
-            <img class="card-img-top" src="{{product.imageUrl}}" data-toggle="modal" data-target="#myModal">
+            <img class="card-img-top" src="{{product.imageUrl}}" data-toggle="modal" [attr.data-target]="'#myModal_' + product.id">
             <div class="card-body">
                 <h5 class="card-title">{{product.name}}</h5>
                 <p class="card-text">{{product.description}}</p>
@@ -22,7 +22,7 @@
 
 
     
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="myModal_{{product.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -32,6 +32,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
+                                <img src="{{product.imageUrl}}" width="200px">
                                 <p>{{product.description}}</p>
                                 <p>{{product.longDescription}}</p>
                         </div>

@@ -1,6 +1,6 @@
 <h1>Cart</h1>
 
-<div class="cart-item" *ngFor="let item of items">
+<div class="cart-item flex-wrap" *ngFor="let item of items">
     <div class="image">
         <img class="image" src="{{item.imageUrl}}">
     </div>
@@ -8,7 +8,10 @@
     <span> {{ item.price | number: '1.2-2'}} RON  </span> <br>
     <span>  => {{item.description}} </span>
 </div>
-<div class="cartManage">
+<div class="cartManage flex-wrap">
     <button type="button" class="btn btn-outline-danger" (click)="clear()">Clear Cart</button>
     <button type="button" class="btn btn-outline-danger" routerLink="/delivery-data">Continue</button>
+</div>
+<div class="back flex-wrap">
+    <button type="button" class="btn btn-outline-danger" routerLink="/menu">Back to menu</button>
 </div>

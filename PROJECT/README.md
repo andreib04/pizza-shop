@@ -1,10 +1,4 @@
 # PROJECT
-
-![Alt text](https://github.com/andreib04/pizza-shop/assets/114991182/6f9ed558-b0be-4d06-b80a-466293c146f6)
-![Alt text](https://github.com/andreib04/pizza-shop/assets/114991182/b583b9b8-c592-4a7f-bf51-2c26fbc5cf6c)
-![Alt text](https://github.com/andreib04/pizza-shop/assets/114991182/8f67f35e-928f-4ad8-a631-32194b299de9)
-![Alt text](https://github.com/andreib04/pizza-shop/assets/114991182/7ffda21b-54de-449a-b1ef-225ebe8cb4a8)
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
 ## Development server
